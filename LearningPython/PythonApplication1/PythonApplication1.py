@@ -116,4 +116,22 @@ if __name__ == '__main__':
     a_list.pop(1)
     print(a_list)
 
+    print("\nTUPLES - they are immutable")
+    a_tuple = ("a", "b", "c", "d", "example")
+    print(a_tuple)
+
+    print("\nassign multiple values at once")
+    v = ('a', 2, True)
+    (xx, yy, zz) = v
+    print(xx)
+    print(yy)
+    print(zz)
+
+    (MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY) = range(7)
+    print(MONDAY)
+    print(TUESDAY)
+
+    print("\nSETS")
+    
+
 
