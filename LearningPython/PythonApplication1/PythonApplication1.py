@@ -132,6 +132,37 @@ if __name__ == '__main__':
     print(TUESDAY)
 
     print("\nSETS")
+    a_set = {1}
+    print(a_set)
+    a_list = ['a', 'b', 'mpilgrim', True, False, 42]
+    a_set = set(a_list)
+    print(a_set)
+
+    a_set.add(9)
+    print(a_set)
+
+    a_set.add(9)
+    print(a_set)
+
+    a_set.update({9,50,51,52})
+    print(a_set)
+
+    a_set.discard(9)
+    print(a_set)
+    a_set.discard(9)
+
+    a_set.remove(50)
+    print(a_set)
+    #a_set.remove(50) - Raises a KeyError exception
     
+    a_set.pop();
+    a_set.pop();
+    print(a_set)
+
+    a_set.clear()
+    a_set = set()
+    #a_set.pop(); - Raises a KeyError exception
+
+    print(a_set)
 
 
