@@ -23,6 +23,12 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 
     raise ValueError('number too large')
 
+def is_it_true(anything):
+    if anything:
+        print("yes, it is true")
+    else:
+        print("no, it is false")
+
 if __name__ == '__main__':
     print(approximate_size(1000000000000, False))
     print(approximate_size(1000000000000))
@@ -50,3 +56,64 @@ if __name__ == '__main__':
 
     reducedFraction = fractions.Fraction(4, 6)
     print(reducedFraction);
+
+    import math
+    print(math.tan(math.pi / 4))
+
+    print(is_it_true(1))
+    print(is_it_true(-1))
+    print(is_it_true(0))
+
+    print("\nLISTS")
+    a_list = ['a', 'b', 'c', 'example']
+    print(a_list)
+    print(a_list[0])
+    print(a_list[1])
+    print(a_list[2])
+    print(a_list[-1])
+    print(a_list[-2])
+
+    print("\nslicing list")
+    print(a_list[1:3])
+    print(a_list[1:-2])
+    print(a_list[2:])
+    print(a_list[:])
+
+    print("\nadding item to a list")
+    a_list = ['a']
+    a_list = a_list + [2.0, 3]
+    print(a_list)
+    a_list.append(True)
+    print(a_list)
+    a_list.extend(['four', 'fifth'])
+    print(a_list)
+    a_list.insert(0, "AAA")
+    print(a_list)
+
+    print("\nextend vs. append")
+    a_list = ['a', 'b', 'c']
+    a_list.extend(['d', 'e', 'f'])
+    print(a_list)
+    print(len(a_list))
+
+    a_list.append(['g', 'h', 'i'])
+    print(a_list)
+    print(len(a_list))
+
+    print("\nremoving item from a list")
+    del a_list[0]
+    print(a_list)
+
+    a_list.remove("b")
+    print(a_list)
+    
+    a_list.remove(['g', 'h', 'i'])
+    print(a_list)
+
+    a_list.pop()
+    print(a_list)
+
+    a_list.pop(1)
+    print(a_list)
+
+
