@@ -26,4 +26,27 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 if __name__ == '__main__':
     print(approximate_size(1000000000000, False))
     print(approximate_size(1000000000000))
+
+    print("\nNUMBERS")
     print(True + True)
+    print(type(1))
+    print(type(1.0))
+    print(isinstance(1, int))
+    print(int(2.9))
+
+    print("\nNUMERICAL OPERATIONS")
+    print(11 / 2)
+    print(11 // 2)
+    print(11 // 2)
+    print(11.0 // 2)
+    print(11 ** 2)
+    print(11 % 2)
+
+    print("\nFRACTIONS")
+    import fractions
+    fraction = fractions.Fraction(1, 3)
+    print(fraction);
+    print(2*fraction);
+
+    reducedFraction = fractions.Fraction(4, 6)
+    print(reducedFraction);
