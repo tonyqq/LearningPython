@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>989f03a3-903f-47b6-af8c-c431afdbc853</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NativeDatatypes.py</StartupFile>
+    <StartupFile>Comprehensions.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Comprehensions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NativeDatatypes.py" />
   </ItemGroup>
   <PropertyGroup>
