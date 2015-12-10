@@ -165,4 +165,19 @@ if __name__ == '__main__':
 
     print(a_set)
 
+    print("\nDICTIONARIES")
+    a_dict = {'server': 'db.diveintopython3.org', 'database': 'mysql'}
+    print(a_dict)
+    a_dict['database'] = 'mongo'
+    print(a_dict)
+    a_dict['user'] = 'tono'
+    print(a_dict)
+
+    print("\nNONE")
+    print(None == false)
+    print(None == 0)
+    print(None == '')
+    print(None == None)
+
+
 
